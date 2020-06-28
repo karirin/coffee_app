@@ -1,0 +1,14 @@
+<% provide(:title, @title) %>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="title"><p><%= @title %></p></div>
+  <div class="follow_user">
+    <% if @users.any? %>
+      <ul class="users follow">
+        <%= render @users %>
+      </ul>
+      <%= will_paginate class: "center" %>
+    <% end %>
+  </div>
+  </div>
+</div>

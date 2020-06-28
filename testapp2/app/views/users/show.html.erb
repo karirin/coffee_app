@@ -1,0 +1,22 @@
+  <div class="row">
+
+    <div class="col-md-3">
+      <section class="user_info">
+        <%= render 'shared/user_info' , user: @user%>
+        <%= render 'shared/follow_form' if logged_in? %>
+      </section>
+    </div>
+
+    <div class="col-md-9">
+
+      <p class="my_toptitle">投稿したカフェ</p>
+      <%= render 'shared/myfeed' %>
+                <p class="like_toptitle">自分がいいねしたカフェ</p>
+      <%= render 'shared/likingfeed' %>
+      <p class="following_toptitle">フォロワーの投稿したカフェ</p>
+    　<%= render 'shared/followingfeed' %>
+
+
+    </div>
+
+  </div>
