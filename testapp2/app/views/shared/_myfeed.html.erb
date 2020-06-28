@@ -1,6 +1,0 @@
-<% if @myfeed_items.any? %>
-  <ol class="Posts">
-    <%= render @myfeed_items %>
-    </ol>
-      <%= will_paginate @myfeed_items, previous_label: '&lt 前へ', next_label: '次へ &gt', :param_name => 'myfeed_items_page', class: "center" %>
-<% end %>
