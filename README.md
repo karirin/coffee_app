@@ -53,3 +53,6 @@
   - 投稿詳細画面にGoogle mapを表示
   
 - ページネーション機能（will_paginateを使用）
+
+## クラウドアーキテクチャー
+![cloud-map](https://user-images.githubusercontent.com/60878547/85970698-33cf1180-ba06-11ea-8937-bcd470e03ecd.png)
