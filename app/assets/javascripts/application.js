@@ -29,3 +29,9 @@ $(function () {
         $(".search.box").slideToggle();
   })
 });
+
+$(function () {
+$('.message').fadeIn("slow", function () {
+  $(this).delay(3000).fadeOut("slow");
+})
+});
