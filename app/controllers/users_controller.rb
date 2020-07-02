@@ -2,6 +2,7 @@
 
 class UsersController < ApplicationController
   protect_from_forgery
+  before_action :user_params, only: :create
   before_action :logged_in_user, only: %i[edit update destroy
                                           following followers]
   before_action :correct_user,   only: %i[edit update destroy]
@@ -25,9 +26,13 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    @user.save
-    flash[:success] = 'ユーザーが作成されました。'
+    if @user.save
     redirect_to root_url
+    flash[:success] = 'ユーザーが作成されました。'
+    else
+    @user.valid?
+    render :new
+    end
   end
 
   def edit
