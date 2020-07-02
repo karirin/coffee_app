@@ -2,11 +2,14 @@
 自分のお気に入りのカフェを他のユーザーと共有することができるアプリになっております。<br>
 名前や住所はもちろんwifi、クレジットカードが使えるかなど詳細な情報まで知ることができます。
 
+![user-image](https://user-images.githubusercontent.com/60878547/86348787-1ff00d80-bc9b-11ea-9492-b677e003b565.png)
+![login-page](https://user-images.githubusercontent.com/60878547/86348949-604f8b80-bc9b-11ea-8620-0691351375c2.png)
 ## 制作背景
 私がカフェで作業することが多く、<br>
 実際に足を運ばなくてもカフェの情報がわかるものがあると便利に感じたため制作しました。
 
 ## URL
+https://www.coffeeapp.work/
 
 ## 使用技術
 
@@ -24,14 +27,17 @@
   - Nginx 1.12.2
 
 - DB
-  - MySQL 5.7.30
+  - MySQL 5.7
 
 - インフラ・開発環境等
+  - AWS(ACM,EC2/ALB,ECR/ECS,RDS,Route53,VPC,S3)
   - Docker/docker-compose
-  - AWS（VPC, EC2, S3, Route 53）
-  - Rubocop
+  - CircleCI
 
-- アプリケーション構成図
+- その他
+  - Google API
+  - Rubocop
+  - RSpec
 
 ## 機能一覧
 - ユーザー機能
