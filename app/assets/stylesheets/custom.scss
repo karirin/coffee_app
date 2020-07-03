@@ -429,6 +429,11 @@ aside {
     height: auto;
     border-radius: 10px; 
     text-align: center;
+    .map_detail {
+      font-size: 25px;
+      display: inline-block;
+      width: 100%;
+    }
     .Post_image {
       padding: 0 20px;
       position: relative;
@@ -451,11 +456,11 @@ aside {
   height: 400px;
 }
 
-#map2{
+#map2 {
   text-align:center;
 }
 
-.gmap-mapindex{
+.gmap-mapindex {
   max-width: 100vw; 
   height: 90vh;
 }
