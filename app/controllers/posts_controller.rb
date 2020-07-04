@@ -43,6 +43,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user = current_user
     return if @post.valid?
+
     render :new
   end
 
