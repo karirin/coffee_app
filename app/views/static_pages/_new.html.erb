@@ -15,29 +15,7 @@
 <%= form.time_field :time_start ,class: "form-control"%> <%= form.label :"〜" %> <%= form.time_field :time_end ,class: "form-control"%>
 </div>
 
-<%= form.label :"環境" %>
-<div class="environment center" data-toggle="tooltip" title="Wi-Fi,充電,喫煙,クレジットカードの利用状況をご入力ください">
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-default" >
-        <%= form.check_box :wifi, {} , true, false %><%= image_tag 'wifi.png' , :size => '50x40'%>
-    </label>
-</div>
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-default">
-        <%= form.check_box :plug , {} , true, false %><%= image_tag 'plug.png' , :size => '50x40'%>
-    </label>
-</div>
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-default">
-        <%= form.check_box :tabacco , {} , true, false %><%= image_tag 'tabacco.png' , :size => '50x40'%>
-    </label>
-</div>
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-default">
-        <%= form.check_box :card , {} , true, false %><%= image_tag 'card.png' , :size => '50x40'%>
-    </label>
-</div>
-</div>
+<%= render 'shared/environment' %>
 
 <%= form.label :"評価" %>
 <div class="evaluation center">

@@ -2,7 +2,7 @@
 
 class PostsController < ApplicationController
   protect_from_forgery except: :create
-  before_action :post_params, only: %i[confirm create]
+  before_action :post_params, only: %i[confirm create　edit]
   before_action :correct_user, only: :destroy
 
   def new

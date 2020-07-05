@@ -19,29 +19,7 @@
       <%= f.time_field :time_end, class: 'form-control' %>
 </div>
 
-<%= f.label :"環境" %>
-<div class="environment center">
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-default" >
-        <%= f.check_box :wifi, {} , true, false %><%= image_tag 'wifi.png' , :size => '50x40'%>
-    </label>
-</div>
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-default">
-        <%= f.check_box :plug , {} , true, false %><%= image_tag 'plug.png' , :size => '50x40'%>
-    </label>
-</div>
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-default">
-        <%= f.check_box :tabacco , {} , true, false %><%= image_tag 'tabacco.png' , :size => '50x40'%>
-    </label>
-</div>
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-default">
-        <%= f.check_box :card , {} , true, false %><%= image_tag 'card.png' , :size => '50x40'%>
-    </label>
-</div>
-</div>
+<%= render 'shared/environment' %>
 
 <%= f.label :"評価" %>
 <div class="evaluation center">
