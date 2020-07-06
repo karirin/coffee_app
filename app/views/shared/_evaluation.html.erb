@@ -1,0 +1,31 @@
+<%= form_for(@post) do |form| %>
+<%= form.label :"評価" %>
+<div class="evaluation center">
+
+<div class="btn-group" data-toggle="buttons">
+	<label class="btn btn-default">
+         <%= form.check_box :evaluation1,   {} , '1', nil %><%= image_tag 'star.png' , :size => '50x40'%>
+    </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+	<label class="btn btn-default">
+         <%= form.check_box :evaluation2,  {} , '1', nil  %><%= image_tag 'star.png' , :size => '50x40'%>
+    </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+	<label class="btn btn-default">
+         <%= form.check_box :evaluation3,  {} , '1', nil  %><%= image_tag 'star.png' , :size => '50x40'%>
+    </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+	<label class="btn btn-default">
+  		 <%= form.check_box :evaluation4,  {} , '1', nil  %><%= image_tag 'star.png' , :size => '50x40'%>
+    </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+	<label class="btn btn-default">
+  		 <%= form.check_box :evaluation5,  {} , '1', nil  %><%= image_tag 'star.png' , :size => '50x40'%>
+    </label>
+</div>
+</div>
+<% end %>
