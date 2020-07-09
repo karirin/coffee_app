@@ -15,8 +15,10 @@
 <div class="store_time">
       <%= f.label :営業時間 %>
       <%= f.time_field :time_start, class: 'form-control' %>
+      <%= f.hidden_field :time_start %>
       <%= f.label :"〜" %>
       <%= f.time_field :time_end, class: 'form-control' %>
+      <%= f.hidden_field :time_end %>
 </div>
 
 <%= render 'shared/environment' %>
