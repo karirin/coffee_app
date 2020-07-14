@@ -1,5 +1,6 @@
   <div class="title"><p>投稿編集画面</p></div>
     <%= form_for(@post) do |f| %>
+
       <%= render 'shared/error_messages', object: f.object %>
     <div class="edit_detail">
 
@@ -27,4 +28,5 @@
       <%= f.submit "変更する", class: "btn btn-primary" %>
 </div>
 </div>
+    <%binding.pry%>
 <% end %>
