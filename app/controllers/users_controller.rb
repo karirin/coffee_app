@@ -30,7 +30,6 @@ class UsersController < ApplicationController
       redirect_to root_url
       flash[:success] = 'ユーザーが作成されました。'
     else
-      @user.valid?
       render :new
     end
   end
